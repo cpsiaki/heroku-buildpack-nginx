@@ -56,8 +56,8 @@ echo "Downloading $form_input"
     --prefix=/tmp/nginx \
     --add-module=${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION} \
     --add-module=${temp_dir}/nginx-${NGINX_VERSION}/nginx-uuid4-module-${UUID4_VERSION} \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/ngx_devel_kit \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/form-input-nginx-module
+    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/ngx_devel_kit-0.3.2 \
+    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/form-input-nginx-module-0.12
   make install
 )
 
@@ -74,8 +74,8 @@ echo "Downloading $form_input"
     --prefix=/tmp/nginx-debug \
     --add-module=${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION} \
     --add-module=${temp_dir}/nginx-${NGINX_VERSION}/nginx-uuid4-module-${UUID4_VERSION} \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/ngx_devel_kit \
-    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/form-input-nginx-module
+    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/ngx_devel_kit-0.3.2 \
+    --add-module=${temp_dir}/nginx-${NGINX_VERSION}/form-input-nginx-module-0.12
   make install
 )
 
